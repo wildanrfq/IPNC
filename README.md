@@ -16,9 +16,6 @@ cd IPNC
 python3 IPNC.py
 ```
 
-## Usage
+## Credit
 
-
-
-
-
+Thanks to [Widhi](https://github.com/widhisec) for making an open source project. ;)
