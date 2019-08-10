@@ -18,4 +18,4 @@ python3 IPNC.py
 
 ## Credit
 
-Thanks to [Widhi](https://github.com/widhisec) for making an open source project. ;)
+Thanks to [Widhi](https://github.com/widhisec/phoneinfo) for making an open source project. ;)
