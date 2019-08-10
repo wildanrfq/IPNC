@@ -1,4 +1,4 @@
-![program preview](https://cdn1.imggmi.com/uploads/2019/8/10/e1cf6ccc9917744c4e9501c190d73f90-full.jpg)
+!(preview.JPG)
 
 # IPNC
 Indo Phone Number Checker (IPNC). Tools for checking your Indonesia phone number information.
