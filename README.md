@@ -9,13 +9,14 @@ Indo Phone Number Checker (IPNC). Tools for checking your Indonesia phone number
 So easy.
 
 ```bash
-pkg install python3
-pkg install requests
-pkg install toilet
-pkg install git
-git clone https://github.com/danrfq/IPNC
-cd IPNC
-python3 IPNC.py
+$ pip3 install ipnc
+```
+example
+```python
+from ipnc import Model
+
+mod = Model()
+mod.get_info_cli("+6281291718019")
 ```
 ## Use as package
 besides using it with cli you can also use it as a package, look at the example below

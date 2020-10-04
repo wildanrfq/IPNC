@@ -1,6 +1,8 @@
-import requests
+from .colors import colors as c
+import requests, os
 
 class Model:
+
     def get_info(self, no):
         """
         This method used for get number phone information
@@ -39,3 +41,36 @@ class Model:
 
         # returning the data
         yield final_result
+    
+    def get_info_cli(self, no):
+        """
+        this method used for get number information from cli
+        """
+        #
+        os.system("toilet -f smblock --filter border:metal -w 50 'Indo Phone Number Checker - (  IPNC )'")
+        print()
+        os.system("toilet -f smblock '          by : @danrfq' --filter gay")
+        print()
+
+        for data in self.get_info(no):
+            if "message" in data:
+                print(c.fg.red+"[ ERROR ]\nFormat Nomor Yang Anda Masukkan Salah!"+c.end+"\n"+c.fg.lightgreen+"Contoh Nomor : +6281291718019"+c.end)
+            else:
+                print(c.fg.yellow+"""╔ [ {} Information ]
+                        ╠
+                        ╠ International : {}
+                        ╠ National : {}
+                        ╠ Provider : {}
+                        ╠ Type : {}
+                        ╠ Location : {}
+                        ╠ Timezones : {}
+                        ╠
+                        ╚ [ Finish ]""".
+                format(no,
+                        data["international"],
+                        data["national"],
+                        data['provider'],
+                        data["type"].replace("_"," ").title(),
+                        data["location"],
+                        ", ".join(data["timezones"]))+c.end
+                )
