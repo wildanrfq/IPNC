@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+ipnc/Model.py
+ipnc/__init__.py
+ipnc/colors.py
+ipnc.egg-info/PKG-INFO
+ipnc.egg-info/SOURCES.txt
+ipnc.egg-info/dependency_links.txt
+ipnc.egg-info/requires.txt
+ipnc.egg-info/top_level.txt

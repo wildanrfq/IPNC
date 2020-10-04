@@ -57,20 +57,20 @@ class Model:
                 print(c.fg.red+"[ ERROR ]\nFormat Nomor Yang Anda Masukkan Salah!"+c.end+"\n"+c.fg.lightgreen+"Contoh Nomor : +6281291718019"+c.end)
             else:
                 print(c.fg.yellow+"""╔ [ {} Information ]
-                        ╠
-                        ╠ International : {}
-                        ╠ National : {}
-                        ╠ Provider : {}
-                        ╠ Type : {}
-                        ╠ Location : {}
-                        ╠ Timezones : {}
-                        ╠
-                        ╚ [ Finish ]""".
+╠
+╠ International : {}
+╠ National : {}
+╠ Provider : {}
+╠ Type : {}
+╠ Location : {}
+╠ Timezones : {}
+╠
+╚ [ Finish ]""".
                 format(no,
                         data["international"],
                         data["national"],
                         data['provider'],
                         data["type"].replace("_"," ").title(),
                         data["location"],
-                        ", ".join(data["timezones"]))+c.end
+                        ", ".join(data["timezone"]))+c.end
                 )

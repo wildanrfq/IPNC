@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: ipnc
+Version: 0.1
+Summary: Indo Phone Number Checker (IPNC). Tools for checking your Indonesia phone number information
+Home-page: https://github.com/danrfq/IPNC
+Author: Wildan
+Author-email: fhxmaster@gmail.com
+License: MIT
+Download-URL: https://github.com/danrfq/IPNC/archive/v_01.tar.gz
+Description: ![Program Preview](preview.JPG)
+        
+        # IPNC
+        Indo Phone Number Checker (IPNC). Tools for checking your Indonesia phone number information.
+        
+        
+        ## Installation & Run the Program
+        
+        So easy.
+        
+        ```bash
+        $ pip3 install ipnc
+        ```
+        example
+        ```python
+        from ipnc import Model
+        
+        mod = Model()
+        mod.get_info_cli("+6281291718019")
+        ```
+        ## Use as package
+        besides using it with cli you can also use it as a package, look at the example below
+        
+        ```python
+        from ipnc import Model
+        
+        mod = Model()
+        for i in mod.get_info("+6281291718019"):
+            print(i)
+        ```
+        result
+        ```
+        {
+            'number_phone': '+6281351387634', 'international': '+62 813-5138-7634', 'national': '0813-5138-7634', 
+            'provider': 'Telkomsel', 
+            'type': 'Mobile', 
+            'location': 'Indonesia', 
+            'timezone': ['Asia/Jakarta']
+        }
+        ```
+        ## Credit
+        
+        Thanks to [Widhi](https://github.com/widhisec/phoneinfo) for making an open source project. ;)
+        
+Keywords: numberphone,phone,indonesia
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

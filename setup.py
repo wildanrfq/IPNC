@@ -1,17 +1,19 @@
 
-from distutils.core import setup
+from setuptools import setup
 
 def readme():
   with open('README.md', 'r') as files:
-    return files.read()
+    README = files.read()
+    return README
 
 setup(
   name = 'ipnc',
   packages = ['ipnc'],
   version = '0.1',
   license='MIT',
-  description = 'Indo Phone Number Checker (IPNC). Tools for checking your Indonesia phone number information',   # Give a short description about your library
+  description =('Indo Phone Number Checker (IPNC). Tools for checking your Indonesia phone number information'),
   long_description=readme(),
+  long_description_content_type="text/markdown",
   author = 'Wildan',
   author_email = 'fhxmaster@gmail.com',
   url = 'https://github.com/danrfq/IPNC',
