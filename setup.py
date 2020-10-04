@@ -12,10 +12,10 @@ setup(
   license='MIT',
   description = 'Indo Phone Number Checker (IPNC). Tools for checking your Indonesia phone number information',   # Give a short description about your library
   long_description=readme(),
-  author = 'YOUR NAME',
-  author_email = 'your.email@domain.com',
-  url = 'https://github.com/user/reponame',
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',
+  author = 'Wildan',
+  author_email = 'fhxmaster@gmail.com',
+  url = 'https://github.com/danrfq/IPNC',
+  download_url = 'https://github.com/danrfq/IPNC/archive/v_01.tar.gz',
   keywords = ['numberphone', 'phone', 'indonesia'],
   install_requires=[
           'requests'
